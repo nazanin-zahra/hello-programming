@@ -7,12 +7,18 @@ object HomeWork25 {
     fun main(args: Array<String>) {
         val input = mutableListOf(10, 5, 21, 15, 8)
         println("origin: $input")
+        val reversed: List<Int> = reversed(input)
+        println("reversed: $reversed")
+    }
+
+    fun reversed(list: List<Int>): List<Int> {
         val output = mutableListOf<Int>()
-        var i = input.size - 1
+
+        var i = list.size - 1
         while (i >= 0) {
-            output.add(input[i])
+            output.add(list[i])
             i -= 1
         }
-        println("reversed: $output")
+        return output
     }
 }
