@@ -3,6 +3,7 @@ package homework
 import java.util.*
 
 object HomeWork25 {
+    //تابع reverse را طوری بنویسید که لیست را گرفته و ان را برعکس کند .
     @JvmStatic
     fun main(args: Array<String>) {
         val input = mutableListOf(10, 5, 21, 15, 8)
@@ -18,6 +19,7 @@ object HomeWork25 {
         while (i >= 0) {
             output.add(list[i])
             i -= 1
+            //i=i-1
         }
         return output
     }
