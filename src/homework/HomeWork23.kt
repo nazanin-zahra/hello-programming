@@ -1,7 +1,8 @@
 package homework
 
 import java.util.*
-
+//برنامه ای که لیست اعداد nums را گرفته و همچنین عدد target  را هم بگیرد
+// و index  اعدادی از nums که مجموعه شان برابر با target است را چاپ کند .
 object HomeWork23 {
     @JvmStatic
     fun main(args: Array<String>) {
