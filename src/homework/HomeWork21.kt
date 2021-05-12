@@ -1,7 +1,8 @@
 package homework
 
 import java.util.*
-
+// اعداد p,m را گرفته و عدد m به توان p و m*pرا محاسبه و چاپ کند
+//با تابع و اسمع تابع power باشد .
 object HomeWork21 {
     @JvmStatic
     fun main(args: Array<String>) {
@@ -18,10 +19,10 @@ object HomeWork21 {
         println("$m*$p= $multiplication")
     }
 
-    fun power(n: Int, p: Int): Int {
+    fun power(m: Int, p: Int): Int {
         var sum = 1
         for (i in 1..p) {
-            sum = sum * n
+            sum = sum * m
         }
         return sum
     }
