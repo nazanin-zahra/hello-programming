@@ -4,6 +4,7 @@ import java.util.*
 
 object HomeWork20 {
     @JvmStatic
+    //الگوریتمی بنویسد که n را گرفته و فاکتوریل  ان را باز گرداند.
     fun main(args: Array<String>) {
         val sc = Scanner(System.`in`)
         println("Enter n:")
