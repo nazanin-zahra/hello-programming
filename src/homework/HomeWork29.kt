@@ -3,11 +3,14 @@ package homework
 import java.util.*
 
 //مسعله ای بنویسید که عدد را بگیرد و برعکس کند .
+// https://leetcode.com/problems/reverse-integer/
 object HomeWork29 {
     @JvmStatic
     fun main(args: Array<String>) {
-        val out = reverse(-123)
-        println("out: $out")
+        println("out: ${reverse(123)}")
+        println("out: ${reverse(-123)}")
+        println("out: ${reverse(1534236469)}")
+        println("out: ${reverse(-2147483648)}")
     }
 
     fun reverse(x: Int): Int {
@@ -28,8 +31,11 @@ object HomeWork29 {
         while (t != 0) {
             position -= 1
             val d = t % 10
-            val f = d * Math.pow(10.0, position.toDouble()).toInt()
-            sum += f
+            val f: Double = d * Math.pow(10.0, position.toDouble())
+            if (Int.MAX_VALUE - f < sum || Int.MIN_VALUE - f > sum) {
+                return 0
+            }
+            sum += f.toInt()
             t /= 10
         }
         return sum
