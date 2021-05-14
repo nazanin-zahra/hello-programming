@@ -6,7 +6,12 @@ import java.util.*
 object HomeWork29 {
     @JvmStatic
     fun main(args: Array<String>) {
-        val input = 543765876
+        val out = reverse(123)
+        println("out: $out")
+    }
+
+    fun reverse(x: Int): Int {
+        val input = x
         var t = input
 
         // calculate input length
@@ -27,6 +32,6 @@ object HomeWork29 {
             sum += f
             t /= 10
         }
-        println("out: $sum")
+        return sum
     }
 }
