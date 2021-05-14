@@ -1,7 +1,6 @@
 package homework
 
 import java.util.*
-import kotlin.math.pow
 
 //مسعله ای بنویسید که عدد را بگیرد و برعکس کند .
 object HomeWork29 {
@@ -24,12 +23,10 @@ object HomeWork29 {
         while (t > 0) {
             position -= 1
             val d = t % 10
-            val f = d * 10f.pow(position).toInt()
+            val f = d * Math.pow(10.0, position.toDouble()).toInt()
             sum += f
             t /= 10
         }
         println("out: $sum")
-
-
     }
 }
