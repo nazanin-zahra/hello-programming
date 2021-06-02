@@ -4,12 +4,16 @@ import java.util.*
 
 object HomeWork31 {
 
-    // الگوریتمی  بنویسید که تعداد ارقام زوج و فرد عددn را حساب کند .
+    // الگوریتمی  بنویسید که تعداد ارقام زوج و فرد عدد n  را حساب کند .
+    // tip:اگه ستا چیز خواستی توی ی کیسه میگی tree pel
     @JvmStatic
     fun main(args: Array<String>) {
-        val sc = Scanner(System.`in`)
-        print("Enter n: ")
-        val n = sc.nextInt()
+         val result=evenodd(123)
+        println("even:${result.first}")
+        println("odd:${result.second}")
+    }
+
+    fun evenodd(n: Int): Pair<Int,Int> {
         var t = n
         var even = 0
         var odd = 0
@@ -23,8 +27,7 @@ object HomeWork31 {
             }
             t /= 10
         }
-        println("even: $even")
-        print("odd: $odd")
+        return Pair(even,odd)
 
 
     }
