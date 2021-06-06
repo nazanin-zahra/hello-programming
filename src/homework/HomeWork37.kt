@@ -25,26 +25,6 @@ HomeWork37 {
         }
         return -1
     }
-
-
-    fun findByNaziMethod(input: Array<Int>): Int{
-        var j = 0
-        while (j < input.size) {
-            var i = 0
-            if (i == j) {
-                j += 1
-            }
-            if (input[i] == input[j]) {
-                i += 1
-            } else {
-                j += 1
-            }
-            return input[i]
-
-        }
-        return -1
-    }
-
 }
 
 
