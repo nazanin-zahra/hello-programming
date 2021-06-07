@@ -2,7 +2,9 @@ package homework
 
 object
 HomeWork37 {
-    //
+    //ارایه غیر خالی را گرفته که شامل اعداد تکراری است
+    //ولی تنها یک عدد ان تکراری نیست
+    //ان عضو را یافته و چاپ کنید
     @JvmStatic
     fun main(args: Array<String>) {
         println("out:${findByFeriMethod(arrayOf(1, 3, 4, 1, 3))}")
