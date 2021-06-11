@@ -9,7 +9,7 @@ object HomeWork41 {
     @JvmStatic
     fun main(args: Array<String>) {
         val input = listOf<Int>(1, 2, 1, 3, 2, 2, 1, 3, 1)
-        var big = 0
+        var bigIndex = 0
         var mostRepeated = 0
 
         for (i in 0 until input.size) {
@@ -21,10 +21,10 @@ object HomeWork41 {
             }
             if (repeated > mostRepeated) {
                 mostRepeated = repeated
-                big = input[i]
+                bigIndex = i
             }
         }
-        println("out:$big")
+        println("out: ${input[bigIndex]}")
     }
 }
 
