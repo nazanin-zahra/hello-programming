@@ -16,21 +16,27 @@ object HomeWork42 {
         var b = input.size - 1
         var condition = false
         while (!condition) {
-            val middle = (b+a)/2
+            val middle = (b + a) / 2
             when {
                 input[middle] == x -> {
                     println("out:$middle")
-                    condition=true
+                    condition = true
                 }
+
+                input[middle] != x -> {
+                    condition = true
+                    println("out:${-1}")
+                }
+
                 input[middle] > x -> {
                     a = 0
                     b = middle - 1
                 }
+
                 input[middle] < x -> {
                     a = middle + 1
                     b = input.size - 1
                 }
-
             }
         }
     }
