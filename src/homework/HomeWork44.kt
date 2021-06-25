@@ -6,6 +6,7 @@ object HomeWork44 {
     //و به شکل صعودی مرتب کند
     //و  سپس لیست مرتب شده را چاپ کند.
     //(که اعداد تکراری نیستند)
+    //bubble sort
     @JvmStatic
     fun main(args: Array<String>) {
         val input = mutableListOf(23, 14, -5, 46)
