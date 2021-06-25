@@ -1,16 +1,15 @@
 package homework
 
-import java.util.*
-
 object HomeWork42 {
 
     // الگوریتمی بنویسید که n عدد صعودی را خوانده و
     // در یک لیست قرار دهدو سپس عددی راخوانده و
     // محل ان را در لیست مشخص کند
     //(با فرض اینکه اعداد ذخیره شده در لیست تکراری نباشد )
+    //binary search
     @JvmStatic
     fun main(args: Array<String>) {
-        val input = listOf<Int>(1, 15, 20, 25, 30)
+        val input = listOf(1, 15, 20, 25, 30)
         val x = 201
         var a = 0
         var b = input.size - 1
