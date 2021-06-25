@@ -1,7 +1,5 @@
 package homework
 
-import java.util.*
-
 object HomeWork43 {
 
     // برنامه ای بنویسید که عدد فرد را گرفته
