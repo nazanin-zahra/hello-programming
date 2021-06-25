@@ -1,14 +1,12 @@
 package homework
 
-import java.util.*
-
 object HomeWork41 {
 
     // برنامه ای که لیستی از اعداد را گرفته
     // و عددی که بیشترین تکرار را دارد را چاپ کند
     @JvmStatic
     fun main(args: Array<String>) {
-        val input = listOf<Int>(1, 2, 1, 3, 2, 2, 1, 3, 1)
+        val input = listOf(1, 2, 1, 3, 2, 2, 1, 3, 1)
         var bigIndex = 0
         var mostRepeated = 0
 
