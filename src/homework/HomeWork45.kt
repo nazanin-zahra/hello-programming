@@ -16,9 +16,9 @@ object HomeWork45 {
                     smallest = j
             }
             if (input[smallest] < input[i]) {
-                val x = input[smallest]
+                val temp = input[smallest]
                 input[smallest] = input[i]
-                input[i] = x
+                input[i] = temp
             }
         }
         println("out: $input")
