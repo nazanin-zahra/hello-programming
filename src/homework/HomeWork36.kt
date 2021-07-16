@@ -1,14 +1,13 @@
 package homework
 
-import java.util.*
-
 object
 HomeWork36 {
     // برنامه ای که رشته s را گرفته . این رشته شامل حروف بزرگ و کوچکه و اسپیس است .
 //طول کلمه اخر این رشته را برگردانید.
     @JvmStatic
     fun main(args: Array<String>) {
-        println("out:${sizeOfLastWord("hello good girl nazi")}")
+        val n = " "
+        println("out:${sizeOfLastWord(n)}")
     }
 
     private fun sizeOfLastWord(s: String): Int {
