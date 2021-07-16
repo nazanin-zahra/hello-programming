@@ -7,7 +7,7 @@ object Start01 {
         val st1: Student = Student("Sara", "Ghornabi", 12)
         val st2: Student = Student("Nazi", "Beigirad", naziAge)
         val st3 = Student("Farhad", "Rad", 26)
-//        val studentList: List<Student> = listOf(st1, st2, st3, Student("Ati", 18))
+        val studentList: List<Student> = listOf(st1, st2, st3, Student("Ati", "beigi", 34))
 
         st1.introduce()
         st2.introduce()
