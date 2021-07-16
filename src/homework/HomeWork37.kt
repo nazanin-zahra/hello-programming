@@ -7,7 +7,8 @@ HomeWork37 {
     //ان عضو را یافته و چاپ کنید
     @JvmStatic
     fun main(args: Array<String>) {
-        println("out:${findByFeriMethod(arrayOf(1, 3, 4, 1, 3))}")
+        val n = arrayOf(1, 3, 4, 1, 3)
+        println("out:${findByFeriMethod(n)}")
     }
 
     fun findByFeriMethod(input: Array<Int>): Int {
