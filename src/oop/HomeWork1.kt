@@ -23,8 +23,8 @@ object HomeWork1 {
             color = "yellow",
             hasSunroof = false
         )
-        //  println("car's number plate:${car1.numberPlate}")
-        //car1.printDetail()
+        println("car's number plate:${car1.numberPlate}")
+        car1.printDetail()
         val cars = listOf(car1, car2, car3, car4, car5, car6, car7, car8, car9, car10)
         for (car in cars) {
             if (car.engine.silandr > 4) {
