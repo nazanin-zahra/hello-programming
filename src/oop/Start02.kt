@@ -3,8 +3,8 @@ package oop
 object Start02 {
     @JvmStatic
     fun main(args: Array<String>) {
-//        val person = Person("Nazi")
-//        person.eyeColor = "Green"
+        val personn = Person("Nazi")
+        personn.eyeColor = "Green"
 
         val person = Person("Feri", "Blue")
 
