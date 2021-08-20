@@ -23,6 +23,7 @@ object AbstractClass {
 
         override fun breath() {
             super.breath()
+            println("breathing from child")
         }
     }
 }
