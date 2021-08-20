@@ -53,6 +53,10 @@ object Constructor {
 
         constructor(name: String, age: Int) {
             // code inside constructor
+            //you can write (:super()) next to the this constroctor
+            //this is optinal
+            // if you dont write, this constroctor again call any
+
         }
     }
 }
