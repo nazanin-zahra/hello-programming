@@ -12,7 +12,8 @@ object ConstructorAny {
         println("any3 is " + ex3.toString())
         println("any4 is " + ex4.toString())
         println("example1 is " + ex1.toString())
-        println("example2 is " + ex2.toString()) // or println("example2 is $ex2")
+        println("example2 is " + ex2.toString()) // or
+        println("example2 is $ex2")
     }
 
     open class Example {
@@ -22,8 +23,10 @@ object ConstructorAny {
             this.b = b
         }
 
+        // writting (super()) is opitioal
+        // because it calls any in any case
         override fun toString(): String {
-//            return super.toString()
+            //   return super.toString()
             return "b = $b"
         }
     }
