@@ -1,7 +1,6 @@
 package oop
 
-// ask your bro about value of ()
-//and show him the screen shouts
+
 object Practice5Enum {
     @JvmStatic
     fun main(args: Array<String>) {
@@ -27,14 +26,19 @@ object Practice5Enum {
         println(house2)
         val house3 = House2.Dishes.hoursForWork(8)
         println(house3)
-        //   val a=House.valueOf("room")
-        // println(a)
+        val vo = House.valueOf("Kitchen")
+        println(vo)
+        for (value in House.values()) {
+            println(value)
+        }
     }
 
     enum class House(val color: String) {
         Room("yellow"),
         Kitchen("brown"),
-        Dishes("blue")
+        Dishes("blue");
+
+    }
     }
 
     enum class House2(val color: String) {
@@ -63,4 +67,3 @@ object Practice5Enum {
             override fun guest(guest: Int) = "the neighbor2 has $guest guests"
         }
     }
-}
