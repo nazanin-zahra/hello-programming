@@ -24,7 +24,7 @@ object HomeWork11 {
         }
         val ave = sum / n
         println("Average: $ave")
-
+// finding the greater or smaller words or exact word
         var greater = 0
         var smaller = 0
         var exactword = 0
@@ -43,7 +43,3 @@ object HomeWork11 {
         println("Exact word:$exactword")
     }
 }
-
-
-
-
