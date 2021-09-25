@@ -7,12 +7,11 @@ object HomeWork8 {
     fun main(args: Array<String>) {
         val sc = Scanner(System.`in`)
         print("Enter n:")
-        val line = sc.nextLine()
-        val n=line.toInt()
+        val n = sc.nextInt()
 
 
         var t = n
-        for (i in 0 until line.length) {
+        for (i in 0 until n.toString().length) {
             val r = t % 10
             println("$r")
             t = t / 10
