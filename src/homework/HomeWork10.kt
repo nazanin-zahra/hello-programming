@@ -5,8 +5,8 @@ import java.util.*
 object HomeWork10 {
     @JvmStatic
     fun main(args: Array<String>) {
-
-
+//برنامه ای بنویسید که n را بگیرد و
+// به همان تعداد اسم دانش اموز را بپرسد و از  اخر به اول پرینت کند
         val sc = Scanner(System.`in`)
         print("Enter n:")
         val n = sc.nextInt()
