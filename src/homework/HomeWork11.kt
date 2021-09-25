@@ -1,7 +1,11 @@
 package homework
 
 import java.util.*
-
+// برنامه ای بنویسید که n را سوال کرده و n خانه در نظر بگیرد
+//و n عدد دلخواه  را یکی یکی سوال کند و داخل انها قرار دهد
+//ابتدا میانگین انهارا محاسبه کرده
+//و سپس مشخص کند چند عدد از میانگین بزرگترو
+//چند عدد کوچکتر و چند عدد با میانگین برابر است.
 object HomeWork11 {
     @JvmStatic
     fun main(args: Array<String>) {
@@ -13,8 +17,7 @@ object HomeWork11 {
         // get numbers and store
         for (i in 0 until n) {
             print("Enter ${i + 1}:")
-            val enteredInt = sc.nextInt()
-            arr[i] = enteredInt
+            arr[i] = sc.nextInt()
         }
 
         // calculate average
