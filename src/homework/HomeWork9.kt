@@ -1,7 +1,7 @@
 package homework
 
 import java.util.*
-
+//۳ عدد گرفته و از اخر به اول چاپ کن
 object HomeWork9 {
     @JvmStatic
     fun main(args: Array<String>) {
