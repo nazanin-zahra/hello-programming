@@ -25,7 +25,7 @@ object HomeWork7 {
         println("$thousand")
 
         val z = m / 10  //12
-        val oneHundredThousand = m / 10   //  12/10=12????????
+        val oneHundredThousand = m / 10   //  123/10=12????????
         println("$oneHundredThousand")
 
     }
