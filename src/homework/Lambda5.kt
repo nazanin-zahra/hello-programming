@@ -13,12 +13,16 @@ object Lambda5 {
             println("$x")
         }
 
-        l.forEach { println("$l") }
+        l.forEach { println("$it") }
 
         l.forEach(fun(x: Int): Unit = println("$x"))
 
         l.forEach(fun(x: Int) = println("$x"))
 
+        l.forEach(::printInt)
+    }
 
+    fun printInt(i: Int) {
+        println(i)
     }
 }
