@@ -43,6 +43,13 @@ object Lambda2 {
             b = 5,
             calculation = ::subtraction
         )
+
+        calculateAndPrint(
+            a = 2,
+            b = 5
+        ) { x, y ->
+            subtraction(x, y)
+        }
     }
 
     fun sum(a: Int, b: Int) = a + b
