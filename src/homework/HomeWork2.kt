@@ -11,10 +11,15 @@ object HomeWork2 {
         val n = sc.nextInt()
         var sum = 0f
 
-        for (i in 1..n) {
+        for (i:Int  in 1.rangeTo(n)) {
             val s = 1f / i
             sum = sum + s
         }
+
+        //     (1..n).forEach{i:Int ->
+        //      val s=1f/i
+        //   sum=sum+s
+        //}
         println("$sum")
 
     }
