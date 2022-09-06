@@ -10,10 +10,13 @@ object HelloProgramming {
         val name = sc.nextLine()
         print("Enter your family:")
         val family = sc.nextLine()
-        sayWelcome(name, family)
+        sayWelcome(name, family )
+        println(sayWelcome(name, family))
     }
 
-    fun sayWelcome(name: String, family: String) {
-        print("Welcome ${name.capitalize()} ${family.capitalize()}")
+    fun sayWelcome(name: String, family: String): String {
+        println("Welcome ${name.capitalize()} ${family.capitalize()}")
+        return "good bye"
+
     }
 }
